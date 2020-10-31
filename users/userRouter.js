@@ -1,4 +1,5 @@
 const express = require('express');
+const db = require('./userDb');
 
 const router = express.Router();
 
@@ -12,6 +13,7 @@ router.post('/:id/posts', (req, res) => {
 
 router.get('/', (req, res) => {
   // do your magic!
+
 });
 
 router.get('/:id', (req, res) => {
